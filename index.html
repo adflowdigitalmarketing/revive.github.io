@@ -204,6 +204,14 @@
 
     <!-- Scripts for Interactive Elements -->
     <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const headerWrapper = document.querySelector('.header-wrapper');
+
+        mobileToggle.addEventListener('click', () => {
+            headerWrapper.classList.toggle('nav-open');
+        });
+
         // Simple counter animation for Impact Card
         const counterElement = document.querySelector('.impact-card h2');
         let count = 0;
